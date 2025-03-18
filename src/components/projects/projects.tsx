@@ -1,23 +1,14 @@
 "use client";
 import Card from "./card";
 import Dukaan from "@/assests/grocery.png";
-import Counterfeit from "@/assests/counterfiet.png";
+// import Counterfeit from "@/assests/counterfiet.png";
 import Movie from "@/assests/movie.png";
 import Voice from "@/assests/voice.png";
 import Health from "@/assests/health.png";
-// import PowerBI from "@/assests/powerbi.png";
 import { BsFillArrowLeftSquareFill, BsFillArrowRightSquareFill } from "react-icons/bs";
 
 const Projects = () => {
   const projects = [
-    // {
-    //   image: PowerBI,
-    //   title: `Credit Card Dashboard`,
-    //   tech: ["SQL", "Power BI"],
-    //   liveUrl: "",
-    //   codeUrl: "",
-    //   description: "In this Power BI project, I developed an end-to-end dashboard for data analysis. The process included data extraction, transformation, and loading (ETL), followed by creating data models and designing interactive visualizations. I leveraged Power BI's DAX functions and advanced features to build insightful reports and dashboards."
-    // },
     {
       image: Voice,
       title: "Virtual Girlfriend",
@@ -50,14 +41,14 @@ const Projects = () => {
       codeUrl: "https://github.com/Prince-0000/grocery_web_app",
       description:"This web application allows users to purchase groceries, similar to JioMart. Users can log in or sign up using Google authentication, browse products by category, sort the products for easier navigation, after adding product to cart, user can complete their purchases through Stripe."
     },
-    {
-      image: Counterfeit,
-      title: "Counterfeit",
-      tech:["React", "API", "Tailwind","ETher.js",'Block-chain'],
-      liveUrl: "",
-      codeUrl: "https://github.com/Prince-0000/Counterfeit",
-      description:"A web app built on Ethereum Blockchain using Solidity and React.js Developed a web app that uses blockchain technology to verify the product is authentic or not. Companies can register their product on blockchain and, Made it easy for consumers to verify the authenticity of products."
-    },
+    // {
+    //   image: Counterfeit,
+    //   title: "Counterfeit",
+    //   tech:["React", "API", "Tailwind","ETher.js",'Block-chain'],
+    //   liveUrl: "",
+    //   codeUrl: "https://github.com/Prince-0000/Counterfeit",
+    //   description:"A web app built on Ethereum Blockchain using Solidity and React.js Developed a web app that uses blockchain technology to verify the product is authentic or not. Companies can register their product on blockchain and, Made it easy for consumers to verify the authenticity of products."
+    // },
   ];
 
   const slideLeft = () => {

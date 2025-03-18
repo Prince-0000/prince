@@ -4,7 +4,10 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { GrDocumentDownload } from "react-icons/gr";
 // import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { usePathname } from "next/navigation";
+
 const Navbar = () => {
+  const pathname = usePathname();
   const [nav, setNav] = useState(false);
 
   const handleNav = () => {
@@ -26,21 +29,29 @@ const Navbar = () => {
         </a>
       </h1>
       <ul className="hidden md:flex">
+      {pathname==="/" && (
+        <>
         <li className="p-4">
           <a href="#home">Home</a>
         </li>
         <li className="p-4">
           <a href="#about">About</a>
         </li>
+
         <li className="p-4">
           <a href="#experience">Experience</a>
         </li>
+        
+
         <li className="p-4">
           <a href="#project">Projects</a>
         </li>
+
         <li className="p-4">
           <a href="#contact">Contact</a>
         </li>
+        
+
         <button
           onClick={handleDownload}
           className="bg-white my-[5px] mx-3 text-black w-[105px] rounded-md font-medium"
@@ -50,6 +61,8 @@ const Navbar = () => {
           </span>
           <span className="flex absolute top-9 pl-9">Resume</span>
         </button>
+        </>
+        )}
       </ul>
       <div onClick={handleNav} className="cursor-pointer md:hidden block">
         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}

@@ -50,7 +50,8 @@ const Card: React.FC<CardProps> = ({
           </button>
         </Link>
       ) : (
-        <></>
+        <>
+        </>
       )}
 
       <button
