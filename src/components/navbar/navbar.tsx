@@ -29,27 +29,11 @@ const Navbar = () => {
         </a>
       </h1>
       <ul className="hidden md:flex">
-      {pathname==="/" && (
         <>
         <li className="p-4">
-          <a href="#home">Home</a>
+          <a href="/">Home</a>
         </li>
-        <li className="p-4">
-          <a href="#about">About</a>
-        </li>
-
-        <li className="p-4">
-          <a href="#experience">Experience</a>
-        </li>
-        
-
-        <li className="p-4">
-          <a href="#project">Projects</a>
-        </li>
-
-        <li className="p-4">
-          <a href="#contact">Contact</a>
-        </li>
+       
         
 
         <button
@@ -62,7 +46,6 @@ const Navbar = () => {
           <span className="flex absolute top-9 pl-9">Resume</span>
         </button>
         </>
-        )}
       </ul>
       <div onClick={handleNav} className="cursor-pointer md:hidden block">
         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
@@ -79,19 +62,7 @@ const Navbar = () => {
         </h1>
         <ul className="uppercase p-4">
           <li onClick={handleNav} className="p-4 border-b border-gray-600">
-            <a href="#home">Home</a>
-          </li>
-          <li onClick={handleNav} className="p-4 border-b border-gray-600">
-            <a href="#about">About</a>
-          </li>
-          <li onClick={handleNav} className="p-4 border-b border-gray-600">
-            <a href="#experience">Experience</a>
-          </li>
-          <li onClick={handleNav} className="p-4 border-b border-gray-600">
-            <a href="#project">Projects</a>
-          </li>
-          <li onClick={handleNav} className="p-4 border-b border-gray-600">
-            <a href="#contact">Contact</a>
+            <a href="/">Home</a>
           </li>
           <button
             onClick={handleDownload}
