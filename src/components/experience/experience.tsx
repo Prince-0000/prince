@@ -10,13 +10,13 @@ const Experience = () => {
       desc: "Developing an e-auction platform from scratch where companies can create auctions with suppliers and stakeholders. The platform has different views for suppliers, stakeholders, and admins. Suppliers can place bids, and stakeholders can view the auction. The supplier with the highest bid wins the auction. ",
       skills: ["Vue.js", "Socket.io", "Typescript", "Vuetify", "API"],
     },
-    // {
-    //   year: "May 2023 - October 2023",
-    //   role: "Frontend Developer",
-    //   title: "Seclookup",
-    //   desc: "Developed a malicious domain scanner that analyzes domains to identify potential threats. It provides a malicious score, DNS information, and IPv4 records. I also integrated an authentication system to ensure secure access. This tool helps users avoid dangerous websites.",
-    //   skills: ["React", "API", "Tailwind"],
-    // },
+    {
+      year: "May 2023 - October 2023",
+      role: "Frontend Developer",
+      title: "Seclookup",
+      desc: "Developed a malicious domain scanner that analyzes domains to identify potential threats. It provides a malicious score, DNS information, and IPv4 records. I also integrated an authentication system to ensure secure access. This tool helps users avoid dangerous websites.",
+      skills: ["React", "API", "Tailwind"],
+    },
   ];
 
   return (

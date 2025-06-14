@@ -1,7 +1,8 @@
-"use client"
+/* eslint-disable react/no-unescaped-entities */
+"use client";
 import React from "react";
 import Image from "next/image";
-import Profile from "@/assests/profile1.png"
+import Profile from "@/assests/profile1.png";
 
 const About = () => {
   return (
@@ -19,22 +20,25 @@ const About = () => {
           </h1>
           <p>
             {" "}
-            I am a fourth year B.Tech CS student at Graphic Era Hill Univerity. I
-            am a skilled full stack developer with experience in front-end development. 
-            I am also a proficient coder with strong
-            problem-solving skills. I am dedicated and hardworking, with a
-            passion for software development. I am also flexible and adaptive,
-            able to quickly learn new technologies and adapt to new situations.
+            <p>
+              I'm a Computer Science graduate with experience building
+              full-stack web applications that are scalable, user-friendly, and
+              performance-driven. I work with technologies like Vue.js, Next.js,
+              Node.js, FastAPI, and PostgreSQL, with a strong focus on clean
+              architecture and real-world usability.
+            </p>
+            <p className="py-3">
+              I've worked on real-time systems, API integration, and modular UI
+              components, and I’m comfortable using Docker, AWS, and Git to
+              deploy and manage applications effectively.
+            </p>
+            <p className="py-3">
+              I'm also passionate about AI and machine learning, and I'm
+              actively exploring how to build smart, practical solutions that
+              make a real-world impact.
+            </p>
           </p>
-          <p className="py-3">
-            My portfolio showcases a diverse collection of projects that
-            highlight my problem-solving abilities
-          </p>
-          <p>
-            I am dedicated to staying up-to-date with the latest industry trends
-            and technologies. I continuously expand my knowledge and skills
-            through self-learning and professional development
-          </p>
+
           {/* <button className="bg-black text-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto md:mx-0 py-3">
             Get Started
           </button> */}
@@ -45,4 +49,3 @@ const About = () => {
 };
 
 export default About;
-

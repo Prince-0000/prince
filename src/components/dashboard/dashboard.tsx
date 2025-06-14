@@ -30,7 +30,7 @@ const Dashboard = () => {
           </span>
         </div>
         <p className="md:text-2xl text-xl font-bold text-gray-500 px-2 mt-4">
-          Unlocking Efficiency with Full-Stack Mastery & DSA Insights
+          Build with purpose. Code with precision. Deploy with confidence
         </p>
         <div className="flex justify-center items-center space-x-5 md:w-[75%] my-8">
           {socialLinks.map((item, index) => (
