@@ -13,9 +13,9 @@ const Navbar = () => {
   const handleNav = () => {
     setNav(!nav);
   };
-  const fileUrl = "https://drive.google.com/file/d/1pylPolQr6ShQ34MTteaLBzYkc76QgaY3/view?usp=sharing"
+  const fileUrl = "https://drive.google.com/file/d/1zrxoRTn4AU1bnNji7d1tffNrtUQkbNpg/view?usp=drive_link/preview"
   const handleDownload = () => {
-    window.open(fileUrl, "_blank");
+    window.open(fileUrl, "_blank", "noopener,noreferrer");
     // toast.info("You don't have access !");
   };
   return (
