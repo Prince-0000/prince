@@ -5,19 +5,7 @@ import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import { client } from '@/sanity/lib/client'
 import * as FaIcons from 'react-icons/fa'
 import * as SiIcons from 'react-icons/si'
-
-interface SocialLink {
-  icon: string
-  link: string
-}
-
-interface DashboardData {
-  introText: string
-  mainName: string
-  typewriterWords: string[]
-  tagline: string
-  socialLinks: SocialLink[]
-}
+import { DashboardData, SocialLink } from '@/types'
 
 const Dashboard = () => {
   const [data, setData] = useState<DashboardData | null>(null)
@@ -44,7 +32,6 @@ const Dashboard = () => {
     fetchData()
   }, [])
 
-  // Safe default for words
   const [text] = useTypewriter({
     words: data?.typewriterWords?.length ? data.typewriterWords : [''],
     loop: 0,
@@ -76,7 +63,7 @@ const renderIcon = (iconName: string) => {
 
   return (
     <div id="home" className="text-white">
-      <div className="max-w-[800px] w-full h-screen mx-auto text-center flex flex-col justify-center items-center">
+      <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center items-center">
         <p className="text-[#00df9a] font-bold md:mb-[-10px] p-2">{data.introText}</p>
         <h1 className="md:text-5xl sm:text-5xl text-4xl font-bold md:py-6">{data.mainName}</h1>
 
